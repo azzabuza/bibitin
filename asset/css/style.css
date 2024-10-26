@@ -579,14 +579,6 @@ padding:0;
 margin:10px;
 border-bottom:1px solid #dcdcdc;
 }
-.category h2{
-font-size:20px;
-font-weight:600;
-color:#111111;
-padding:0;
-margin:10px;
-border-bottom:1px solid #dcdcdc;
-}
 .category-box{
 box-sizing:border-box;
 display:flex;
@@ -1805,6 +1797,56 @@ border:none !important;
 }
 .recommendation-product-content li a:hover{
 color:#008000;
+}
+/* SERVICE */
+.service{
+box-sizing:border-box;
+padding:10px;
+margin:0;
+text-align:left;
+position:relative;
+}
+.service h2{
+font-size:20px;
+font-weight:600;
+color:#111111;
+padding:0;
+margin:10px;
+border-bottom:1px solid #dcdcdc;
+}
+.service-box{
+box-sizing:border-box;
+display:flex;
+justify-content:left;
+flex-wrap:wrap;
+}
+.service-flex{
+width:25%;
+padding:10px;
+box-sizing:border-box;
+}
+.service-content{
+box-sizing:border-box;
+padding:10px;
+margin:0;
+border-radius:10px;
+min-height:100%;
+border:1px solid #dcdcdc;
+}
+.service-content h3{
+color:#222222;
+font-size:16px;
+font-weight:600;
+padding:0;
+margin:0 0 10px 0;
+}
+.service-content p{
+box-sizing:border-box;
+color:#333333;
+font-size:15px;
+font-weight:400;
+padding:0;
+margin:0 0 10px 0;
 }
 /* TIMELINE */
 .timeline{
