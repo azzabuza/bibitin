@@ -1839,9 +1839,10 @@ box-sizing:border-box;
 background:#008000;
 padding:10px;
 margin:0;
+text-align:center;
 }
 .service-head h3{
-color:#222222;
+color:#ffffff;
 font-size:16px;
 font-weight:600;
 padding:0;
@@ -1849,7 +1850,7 @@ margin:0 0 10px 0;
 }
 .service-head p{
 box-sizing:border-box;
-color:#333333;
+color:#f5f5f5;
 font-size:15px;
 font-weight:400;
 padding:0;
