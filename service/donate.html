@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Donasi</title>
+<meta property="image" id="metaImage" content="https://bibitin.com/asset/image/page/donate.webp">
+<meta name="description" id="metaDescription" content="Donasi melalui Bibitin untuk mendukung penghijauan alam, bantuan sosial, panti asuhan, korban bencana, dan berbagai tujuan kemanusiaan lainnya. Setiap donasi akan disalurkan secara aman dan transparan.">
+<meta name="robots" content="index,follow"/>
+<link rel="canonical" href="https://bibitin.com"/>
+<!-- FACEBOOK -->
+<meta property="og:title" id="ogTitle" content="Donasi">
+<meta property="og:image" id="ogImage" content="https://bibitin.com/asset/image/page/donate.webp">
+<meta property="og:description" id="ogDescription" content="Donasi melalui Bibitin untuk mendukung penghijauan alam, bantuan sosial, panti asuhan, korban bencana, dan berbagai tujuan kemanusiaan lainnya. Setiap donasi akan disalurkan secara aman dan transparan.">
+<!-- TWITTER -->
+<meta name="twitter:title" id="twitterTitle" content="Donasi">
+<meta name="twitter:image" id="twitterImage" content="https://bibitin.com/asset/image/page/donate.webp">
+<meta name="twitter:description" id="twitterDescription" content="Donasi melalui Bibitin untuk mendukung penghijauan alam, bantuan sosial, panti asuhan, korban bencana, dan berbagai tujuan kemanusiaan lainnya. Setiap donasi akan disalurkan secara aman dan transparan.">
+<!-- Mobile -->
+<meta content="yes" name="mobile-web-app-capable"/>
+<meta content="yes" name="apple-touch-fullscreen"/>
+<meta content="Bibitin" name="apple-mobile-web-app-title"/>
+<meta content="Bibitin" name="application-name"/>
+<meta content="yes" name="apple-mobile-web-app-capable"/>
+<meta content="Bibitin" name="apple-mobile-web-app-status-bar-style"/>
+<link rel="icon" type="images/x-icon" href="../asset/image/favicon.png">
+<meta name="theme-color" content="#008000">
+<!-- Plugin -->
+<link href="../asset/css/style.css" rel="stylesheet">
+<link href="../asset/css/responsive.css" rel="stylesheet">
+</head>
+<body>
+<div class="content-wrapper">
+<section class="header" id="header"></section>
+<section class="article">
+<h2>Donasi Hebat</h2>
+<div class="article-box">
+<article class="article-content">
+<div class="article-grid">
+<div class="article-banner">
+<img src="../asset/image/page/donate.webp" alt="Donasi Bibitin">
+</div>
+<form id="donateForm" class="donation-box" onsubmit="event.preventDefault(); submitForm();">
+<h3>Formulir Donasi:</h3>
+<div class="donation-form">
+<label>Nama Anda</label>
+<div class="donation-input">
+<svg class="line" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="none" stroke="currentColor">
+<path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+<input type="text" id="name" name="name" placeholder="Masukkan nama Anda" value="" autocomplete="off" maxlength="300" minlength="3" required>
+</div>
+</div>
+<div class="donation-form">
+<label>Nomor Whatsapp</label>
+<div class="donation-input">
+<svg class="line" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="none" stroke="currentColor">
+<path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" /><path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" />
+</svg>
+<input id="whatsapp" name="whatsapp" type="number" placeholder="081XXXXXXXXX" value="" autocomplete="off" maxlength="13" minlength="3" required>
+</div>
+</div>
+<div class="donation-form">
+<label>Metode Donasi</label>
+<div class="radio-group">
+<div class="radio-group-flex">
+<input type="radio" id="bca" name="method" value="BCA">
+<label for="bca">BCA</label>
+</div>
+<div class="radio-group-flex">
+<input type="radio" id="dana" name="method" value="DANA">
+<label for="dana">DANA</label>
+</div>
+</div>
+</div>
+<div class="donation-form">
+<label>Nominal Donasi</label>
+<div class="donation-input">
+<svg class="line" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="none" stroke="currentColor">
+<path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M17 8v-3a1 1 0 0 0 -1 -1h-10a2 2 0 0 0 0 4h12a1 1 0 0 1 1 1v3m0 4v3a1 1 0 0 1 -1 1h-12a2 2 0 0 1 -2 -2v-12" /><path d="M20 12v4h-4a2 2 0 0 1 0 -4h4" />
+</svg>
+<input type="text" id="nominal" name="nominal" placeholder="Masukkan nominal donasi" maxlength="300" minlength="3" required>
+</div>
+</div>
+<div class="donation-button-area">
+<button type="submit" class="donation-button">Donasi Sekarang</button>
+<div id="waiting-process" style="display:none;">Tunggu.</div>
+</div>
+</form>
+<div id="info" class="info-message"></div>
+<div class="announcement">
+<h3>Catatan penting:</h3>
+<ul>
+<li>Pilih metode pembayaran donasi yang sesuai dengan keinginan dan preferensi Anda. Kami menyediakan berbagai pilihan pembayaran untuk memudahkan proses donasi Anda.</li>
+<li>Donasi yang telah diberikan bersifat final dan tidak dapat ditarik kembali. Namun, dalam kasus kesalahan teknis Anda dapat mengajukan permintaan peninjauan ulang.</li>
+<li>Bibitin berhak, tanpa memerlukan persetujuan langsung dari donatur, untuk mengarahkan hasil donasi kepada lembaga atau pihak terkait yang kami anggap sesuai.</li>
+<li>Penyaluran donasi tidak terbatas pada kegiatan alam, tetapi juga dapat ditujukan untuk panti asuhan, fakir miskin, korban bencana, serta tujuan kemanusiaan lainnya.</li>
+<li>Patuhi semua <a href="../legal/terms.html">Syarat & Ketentuan</a>, khususnya PASAL 7 ayat 1 sampai 4 yang mengatur tentang penyaluran donasi.</li>
+</ul>
+</div>
+</div>
+</article>
+<aside class="recommendation-product" itemscope itemtype="https://schema.org/ItemList">
+<div class="recommendation-product-content">
+<h3>Rekomendasi Produk:</h3>
+<ol id="recommendation-product-item"></ol>
+</div>
+</aside>
+</div>
+</section>
+<section class="footer" id="footer"></section>
+<section class="mobile" id="mobile"></section>
+</div>
+<script type="text/javascript" src="../component/donate.js"></script>
+<script type="text/javascript" src="../component/recommendation.js"></script>
+<script type="text/javascript" src="../asset/js/style.js"></script>
+</body>
+</html>

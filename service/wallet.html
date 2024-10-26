@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Connect Wallet</title>
+</head>
+<body>
+<button id="connectButton">Connect Wallet</button>
+<p id="walletAddress"></p>
+
+<script>
+const connectButton = document.getElementById('connectButton');
+const walletAddress = document.getElementById('walletAddress');
+
+// Fungsi untuk menghubungkan dompet MetaMask
+async function connectWallet() {
+if (window.ethereum) {
+try {
+// Minta akses ke MetaMask
+const accounts = await ethereum.request({ method: 'eth_requestAccounts' });
+// Tampilkan alamat dompet pertama
+walletAddress.innerText = `Connected Wallet: ${accounts[0]}`;
+} catch (error) {
+console.error("Error connecting to MetaMask:", error);
+}
+} else {
+walletAddress.innerText = "MetaMask is not installed!";
+}
+}
+
+// Event listener untuk tombol connect
+connectButton.addEventListener('click', connectWallet);
+</script>
+</body>
+</html>

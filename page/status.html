@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Status Pesanan</title>
+<meta property="image" id="metaImage" content="https://bibitin.com/asset/image/app.png">
+<meta name="description" id="metaDescription" content="Status pembelian yang anda buat">
+<meta name="robots" content="index,follow"/>
+<link rel="canonical" href="https://bibitin.com"/>
+<!-- FACEBOOK -->
+<meta property="og:title" id="ogTitle" content="Status Pesanan">
+<meta property="og:image" id="ogImage" content="https://bibitin.com/asset/image/app.png">
+<meta property="og:description" id="ogDescription" content="Status pembelian yang anda buat">
+<!-- TWITTER -->
+<meta name="twitter:title" id="twitterTitle" content="Status Pesanan">
+<meta name="twitter:image" id="twitterImage" content="https://bibitin.com/asset/image/app.png">
+<meta name="twitter:description" id="twitterDescription" content="Status pembelian yang anda buat">
+<!-- Mobile -->
+<meta content="yes" name="mobile-web-app-capable"/>
+<meta content="yes" name="apple-touch-fullscreen"/>
+<meta content="Bibitin" name="apple-mobile-web-app-title"/>
+<meta content="Bibitin" name="application-name"/>
+<meta content="yes" name="apple-mobile-web-app-capable"/>
+<meta content="Bibitin" name="apple-mobile-web-app-status-bar-style"/>
+<link rel="icon" type="images/x-icon" href="../asset/image/favicon.png">
+<meta name="theme-color" content="#008000">
+<!-- PLUGIN -->
+<link href="../asset/css/style.css" rel="stylesheet">
+<link href="../asset/css/responsive.css" rel="stylesheet">
+</head>
+<body>
+<div class="content-wrapper">
+<section class="header" id="header"></section>
+<section class="status" id="order-gate">
+<h2>Status Pesanan</h2>
+<div class="status-box">
+<article class="status-left">
+<div class="success" id="success" style="display: none;">
+<h3>Pesanan sukses!!!</h3>
+<p>Hai pesananmu sudah kami terima, kamu akan mendapatkan informasi <b>INVOICE / TAGIHAN OTOMATIS</b> melalui whatsapp untuk melanjutkan proses pembelian.</p>
+<table>
+<th colspan="2">Pemesan</th>
+<tr>
+<td>Nama</td>
+<td><span id="info-name"></span></td>
+</tr>
+<tr>
+<td>Whatsapp</td>
+<td><span id="info-whatsapp"></span></td>
+</tr>
+<th colspan="2">Alamat</th>
+<tr>
+<td>Provinsi</td>
+<td><span id="info-province"></span></td>
+</tr>
+<tr>
+<td>Kabupaten</td>
+<td><span id="info-regency"></span></td>
+</tr>
+<tr>
+<td>Alamat</td>
+<td><span id="info-address"></span></td>
+</tr>
+<th colspan="2">Produk</th>
+<tr>
+<td>Barang</td>
+<td><span id="info-product"></span></td>
+</tr>
+<tr>
+<td>Jumlah</td>
+<td><span id="info-amount"></span></td>
+</tr>
+<th colspan="2">Harga</th>
+<tr>
+<td>Harga Satuan</td>
+<td><span id="info-price"></span></td>
+</tr>
+<tr>
+<td>Total Harga</td>
+<td><span id="info-subtotal"></span></td>
+</tr>
+<tr>
+<td>Ongkir Satuan (kg)</td>
+<td><span id="info-shipping"></span></td>
+</tr>
+<tr>
+<td>Total Ongkir</td>
+<td><span id="info-shipping-total"></span></td>
+</tr>
+<tr>
+<td>Fee</td>
+<td><span>Rp 2.000</span></td>
+</tr>
+<tr>
+<td>Total</td>
+<td style="background:#006400;">
+<span style="color:#ffffff;font-weight:600;" id="info-total"></span>
+</td>
+</tr>
+<th colspan="2">Pembayaran</th>
+<tr>
+<td>Transfer</td>
+<td style="background:#006400;">
+<span style="color:#ffffff;font-weight:600;" id="info-payment"></span></td>
+</tr>
+</table>
+</div>
+<div class="error" id="error" style="display: none;">
+<h3>Yahh pesananmu gagal!!!</h3>
+<p>Pesananmu gagal terkirim, silahkan cek kembali sinyal jaringanmu dan ulangi pengisian formulir.</p>
+</div>
+</article>
+<aside class="status-right">
+<div class="announcement">
+<h3>Catatan penting:</h3>
+<ul>
+<li>Kesalahan penulisan data dan alamat adalah kesalahan mutlak pengguna.</li>
+<li>Hubungi CS kami langsung jika ingin melakukan pembatalan pesanan.</li>
+<li>Pengembalian dana akan dikerjakan setelah 3 hari kerja (sesuai antrian).</li>
+<li>Silahkan lakukan pembayaran sesuai jumlah harga yang tertera pada tabel.</li>
+<li>Tidak dapat melakukan pembatalan pesanan dan pengembalian dana jika barang sudah dikirim.</li>
+</ul>
+</div>
+</aside>
+</div>
+</section>
+<section class="related-product" itemscope itemtype="https://schema.org/ItemList">
+<h2>Produk Lainnya</h2>
+<div class="related-product-box" id="related-product-item"></div>
+</section>
+<section class="footer" id="footer"></section>
+<section class="mobile" id="mobile"></section>
+</div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+const orderData = JSON.parse(localStorage.getItem('orderData'));
+if (orderData) {
+if (orderData.status === 'success') {
+document.getElementById('success').style.display = 'block';
+document.getElementById('info-name').textContent = orderData.name;
+document.getElementById('info-whatsapp').textContent = orderData.whatsapp;
+document.getElementById('info-province').textContent = orderData.province;
+document.getElementById('info-regency').textContent = orderData.regency;
+document.getElementById('info-address').textContent = orderData.address;
+document.getElementById('info-product').textContent = orderData.product;
+document.getElementById('info-amount').textContent = orderData.amount;
+document.getElementById('info-price').textContent = orderData.price;
+document.getElementById('info-subtotal').textContent = orderData.subtotal;
+document.getElementById('info-shipping').textContent = orderData.shipping;
+document.getElementById('info-shipping-total').textContent = orderData.shippingTotal;
+document.getElementById('info-total').textContent = orderData.total;
+document.getElementById('info-payment').textContent = orderData.payment;
+} else if (orderData.status === 'error') {
+document.getElementById('error').style.display = 'block';
+}
+}
+});
+</script>
+<script type="text/javascript" src="../component/related.js"></script>
+<script type="text/javascript" src="../asset/js/style.js"></script>
+</body>
+</html>

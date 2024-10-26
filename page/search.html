@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://bibitin.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://bibitin.com; font-src 'self' https://fonts.gstatic.com; object-src 'none';">
+<title id="metaTitle">Pencarian</title>
+<meta property="image" id="metaImage" content="https://bibitin.com/asset/image/app.png">
+<meta name="description" id="metaDescription" content="Mulai jelajahi sekarang dan temukan produk dengan harga yang terjangkau!">
+<meta name="robots" content="index,follow"/>
+<link rel="canonical" href="https://bibitin.com"/>
+<!-- FACEBOOK -->
+<meta property="og:title" id="ogTitle" content="Pencarian">
+<meta property="og:image" id="ogImage" content="https://bibitin.com/asset/image/app.png">
+<meta property="og:description" id="ogDescription" content="Mulai jelajahi sekarang dan temukan produk dengan harga yang terjangkau!">
+<!-- TWITTER -->
+<meta name="twitter:title" id="twitterTitle" content="Pencarian">
+<meta name="twitter:image" id="twitterImage" content="https://bibitin.com/asset/image/app.png">
+<meta name="twitter:description" id="twitterDescription" content="Mulai jelajahi sekarang dan temukan produk dengan harga yang terjangkau!">
+<!-- Mobile -->
+<meta content="yes" name="mobile-web-app-capable"/>
+<meta content="yes" name="apple-touch-fullscreen"/>
+<meta content="Bibitin" name="apple-mobile-web-app-title"/>
+<meta content="Bibitin" name="application-name"/>
+<meta content="yes" name="apple-mobile-web-app-capable"/>
+<meta content="Bibitin" name="apple-mobile-web-app-status-bar-style"/>
+<link rel="icon" type="images/x-icon" href="../asset/image/favicon.png">
+<meta name="theme-color" content="#008000">
+<!-- PLUGIN -->
+<link href="../asset/css/style.css" rel="stylesheet">
+<link href="../asset/css/responsive.css" rel="stylesheet">
+</head>
+<body>
+<div class="content-wrapper">
+<section class="header" id="header"></section>
+<section class="search">
+<h2>Temukan Produk</h2>
+<div class="search-box">
+<div class="searching">
+<div class="search-engine">
+<svg class="line" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="none" stroke="currentColor">
+<path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /><path d="M21 21l-6 -6" />
+</svg>
+<input type="text" id="search-item" onkeyup="search()" placeholder="Cari produk apa...">
+</div>
+<p id="search-not-found">Produk tidak tersedia</p>
+</div>
+<div class="search-list" id="search-list"></div>
+</div>
+</section>
+<section class="footer" id="footer"></section>
+<section class="mobile" id="mobile"></section>
+</div>
+<script type="text/javascript" src="../component/related.js"></script>
+<script type="text/javascript" src="../component/search.js"></script>
+<script type="text/javascript" src="../asset/js/style.js"></script>
+</body>
+</html>

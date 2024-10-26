@@ -1,0 +1,20 @@
+[
+{
+"link": "../service/donate.html",
+"title": "Donasi untuk Masa Depan",
+"description": "Dukungan alam dan kemanusiaan",
+"imageUrl": "../asset/image/page/donate.webp"
+},
+{
+"link": "../company/about.html",
+"title": "Kenali Bibitin Lebih Dekat",
+"description": "Sang hero penghijau alam Indonesia",
+"imageUrl": "../asset/image/banner/about.webp"
+},
+{
+"link": "#",
+"title": "Ikuti Instagram Bibitin",
+"description": "Dapatkan informasi terupdate",
+"imageUrl": "../asset/image/banner/promo.webp"
+}
+]

@@ -1,0 +1,42 @@
+[
+{
+"url": "../page/category.html?product=sayur",
+"title": "Sayur",
+"image": "../asset/image/icon/sayur.webp"
+},
+{
+"url": "../page/category.html?product=buah",
+"title": "Buah",
+"image": "../asset/image/icon/buah.webp"
+},
+{
+"url": "../page/category.html?product=rempah",
+"title": "Rempah",
+"image": "../asset/image/icon/rempah.webp"
+},
+{
+"url": "../page/category.html?product=hias",
+"title": "Hias",
+"image": "../asset/image/icon/hias.webp"
+},
+{
+"url": "../page/category.html?product=pohon",
+"title": "Pohon",
+"image": "../asset/image/icon/pohon.webp"
+},
+{
+"url": "../page/category.html?product=pupuk",
+"title": "Pupuk",
+"image": "../asset/image/icon/pupuk.webp"
+},
+{
+"url": "../page/category.html?product=media",
+"title": "Media",
+"image": "../asset/image/icon/media.webp"
+},
+{
+"url": "../page/category.html?product=alat",
+"title": "Alat",
+"image": "../asset/image/icon/alat.webp"
+}
+]

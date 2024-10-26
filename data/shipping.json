@@ -1,0 +1,90 @@
+{
+"jakarta": [
+{ "name": "Jakarta Pusat", "shipping": 18000 },
+{ "name": "Jakarta Utara", "shipping": 18000 },
+{ "name": "Jakarta Selatan", "shipping": 18000 },
+{ "name": "Jakarta Barat", "shipping": 18000 },
+{ "name": "Jakarta Timur", "shipping": 18000 }
+],
+"banten": [
+{ "name": "Serang", "shipping": 19500 },
+{ "name": "Tangerang", "shipping": 18000 },
+{ "name": "Cilegon", "shipping": 19500 },
+{ "name": "Lebak", "shipping": 19500 },
+{ "name": "Pandeglang", "shipping": 19500 },
+{ "name": "Tangerang Selatan", "shipping": 18000 }
+],
+"jawa-barat": [
+{ "name": "Bandung", "shipping": 18500 },
+{ "name": "Bogor", "shipping": 18000 },
+{ "name": "Bekasi", "shipping": 18000 },
+{ "name": "Depok", "shipping": 18000 },
+{ "name": "Cimahi", "shipping": 18500 },
+{ "name": "Cirebon", "shipping": 18500 },
+{ "name": "Sukabumi", "shipping": 18500 },
+{ "name": "Tasikmalaya", "shipping": 18000 },
+{ "name": "Karawang", "shipping": 18500 },
+{ "name": "Garut", "shipping": 19500 },
+{ "name": "Purwakarta", "shipping": 18000 },
+{ "name": "Subang", "shipping": 19500 },
+{ "name": "Sumedang", "shipping": 19500 },
+{ "name": "Indramayu", "shipping": 19500 },
+{ "name": "Majalengka", "shipping": 19500 },
+{ "name": "Kuningan", "shipping": 19500 },
+{ "name": "Cianjur", "shipping": 19500 }
+],
+"jawa-tengah": [
+{ "name": "Semarang", "shipping": 16000 },
+{ "name": "Surakarta", "shipping": 16000 },
+{ "name": "Magelang", "shipping": 16000 },
+{ "name": "Pekalongan", "shipping": 19500 },
+{ "name": "Tegal", "shipping": 18000 },
+{ "name": "Salatiga", "shipping": 19500 },
+{ "name": "Purwokerto", "shipping": 19500 },
+{ "name": "Kudus", "shipping": 18000 },
+{ "name": "Purworejo", "shipping": 16000 },
+{ "name": "Wonosobo", "shipping": 19500 },
+{ "name": "Pemalang", "shipping": 19500 },
+{ "name": "Rembang", "shipping": 19500 }
+],
+"jawa-timur": [
+{ "name": "Surabaya", "shipping": 16000 },
+{ "name": "Malang", "shipping": 18500 },
+{ "name": "Kediri", "shipping": 18500 },
+{ "name": "Blitar", "shipping": 19500 },
+{ "name": "Mojokerto", "shipping": 19500 },
+{ "name": "Pasuruan", "shipping": 19500 },
+{ "name": "Probolinggo", "shipping": 19500 },
+{ "name": "Banyuwangi", "shipping": 19500 },
+{ "name": "Jember", "shipping": 19500 },
+{ "name": "Madiun", "shipping": 18500 },
+{ "name": "Ngawi", "shipping": 19500 },
+{ "name": "Tulungagung", "shipping": 19500 },
+{ "name": "Tuban", "shipping": 19500 },
+{ "name": "Lamongan", "shipping": 19500 },
+{ "name": "Gresik", "shipping": 16000 }
+],
+"yogyakarta": [
+{ "name": "Yogyakarta", "shipping": 6500 },
+{ "name": "Bantul", "shipping": 5500 },
+{ "name": "Sleman", "shipping": 7500 },
+{ "name": "Gunung Kidul", "shipping": 9500 },
+{ "name": "Kulon Progo", "shipping": 9500 }
+],
+"kalimantan-barat": [
+{ "name": "Bengkayang", "shipping": 65000 },
+{ "name": "Kapuas Hulu", "shipping": 65000 },
+{ "name": "Kayong Utara", "shipping": 43000 },
+{ "name": "Ketapang", "shipping": 40000 },
+{ "name": "Kubu Raya", "shipping": 45000 },
+{ "name": "Landak", "shipping": 55000 },
+{ "name": "Melawi", "shipping": 55000 },
+{ "name": "Mempawah", "shipping": 58000 },
+{ "name": "Sambas", "shipping": 65000 },
+{ "name": "Sanggau", "shipping": 52000 },
+{ "name": "Sekadau", "shipping": 50000 },
+{ "name": "Singkawang", "shipping": 60000 },
+{ "name": "Pontianak", "shipping": 50000 },
+{ "name": "Sintang", "shipping": 50000 }
+]
+}
